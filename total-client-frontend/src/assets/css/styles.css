@@ -1,0 +1,509 @@
+/*define global colors*/
+:root {
+    --primary: #0D062D;
+    --secondary: #1777CF;
+    --dark: #3A3F51;
+    --light: #B2B2B2;
+    --white: #FFFFFF;
+    --overlay: #0d062dbb;
+    --success: #66C87B;
+    --danger: #ED544E;
+    --warning: #F4C700;
+
+      --primaryC: 40px;
+     --secondaryC: 30px;
+      --h3: 24px;
+      --h4: 18px;
+      --h5: 16px;
+      --h6: 14px;
+      --span: 12px;
+      --text: 16px;
+      --button: 16px;
+      --icon: 4px;
+}
+
+.select{
+    width: 100%!important;
+    border: 1px solid var(--primary);
+    border-radius: 10px;
+}
+
+.select > div{
+    border: none;
+    border-radius: 10px;
+}
+
+.navbar-custom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  margin-right: auto;
+  margin-bottom:10px;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 10px 50px;
+  gap: 2px;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  border-radius: 25px;
+  border: 1px solid #d3d3d3;
+  padding: 10px;
+}
+
+.search-container input {
+  border: none;
+  width: 100%;
+  outline: none;
+  padding-left: 10px;
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+  gap: 1px;
+}
+
+.profile-container {
+  display: flex;
+  align-items: center;
+  gap:1px;
+}
+
+.profile-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.notification-icon {
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  width: 40px; 
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  color: #333;
+  font-size: 20px;
+}
+
+.role {
+  color: var(--light); 
+  font-size: inherit; 
+  font-weight: 600;
+}
+
+body {
+  padding-top: 5px; /* Adjust based on the navbar height */
+}
+
+
+.card-body {
+  flex: 4;
+  background-color:#fff;
+  box-shadow: #6600001f 0px 10px 50px;
+}
+
+.logo {
+  /* Add your custom styles here */
+  width: 200px; /* Example width */
+  height: auto; /* Maintain aspect ratio */
+  display: block;
+  margin: 0 auto; /* Center the logo */
+}
+.nav-link{
+  color:var(--primary)!important; /* Example dark color */
+}
+
+.btn-container {
+  display: flex;
+  gap: 20px!important; /* Adjust the value as needed */
+  margin-left:30px;
+  margin-bottom:12px;
+}
+
+#add-brand-btn {
+  background-color: var(--secondary); /* Custom color for the Add Brand button */
+  border-color: var(--secondary);
+}
+
+#bulk-delete-btn {
+  background-color:var(--danger); /* Custom color for the Bulk Delete button */
+  border-color: var(--danger);
+}
+
+
+.bg-image-vertical {
+  position: relative;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: auto 100%;
+  }
+  
+  @media (min-width: 1025px) {
+  .h-custom-2 {
+  height: 100%;
+  }
+  }
+
+  .h-100 {
+    height: 100vh;
+}
+.bg-image {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+ 
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color:var(--white);
+}
+
+
+.btn-custom {
+  background-color: var(--primary) !important; /* Custom background color */
+  color: var(--white) !important; /* Text color */
+}
+.btn-custom:hover {
+  background-color:var(--white)!important; /* Darker background color on hover */
+  color:var(--overlay)!important;
+  border-color:var(--dark)!important;
+}
+
+.custom-text {
+  color:var(--dark);
+  font-size: var(--text)!important;
+  
+}
+
+.custom-heading{
+  font-size: var(--primaryC);
+  letter-spacing: 1px;
+}
+
+.bg-with-overlay {
+  position: relative;
+  background-size: cover; /* Cover the entire div with the background image */
+  background-position: center!important; /* Center the background image */
+  height: 100vh!important;
+  background-image: url('../images/login-bg.jpg');
+ 
+}
+
+.bg-with-overlay::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%!important;
+  background-color:var(--overlay)/* Overlay color (black with 50% opacity) */
+}
+
+
+.chart-container {
+  position: relative;
+  height:100%; /* Adjust height as needed */
+  width: 100%;
+}
+
+.card-img-top {
+  width: 100%; /* Full width */
+  height: auto; /* Maintain aspect ratio */
+}
+#card-header{
+  font-size:small;
+  color: var(--dark)!important;
+}
+
+
+.bi-person-check, .bi-people, .bi-currency-dollar{
+  font-size: 20px; /* Change the size */
+  color:var(--dark); /* Change the color */
+  border: 1px solid var(--dark); /* Add a border */
+  padding: 3px; /* Add some padding */
+  border-radius:50%;  /* Make the edges rounded */
+  background-color:var(--white); /* Change the background color */
+  
+}
+
+.switch-container {
+  display: flex;
+  position: relative;
+  background-color: #f1f1f1;
+  border-radius: 25px;
+  overflow: hidden;
+  width: fit-content;
+  margin: 50px auto;
+  padding: 5px;
+}
+
+.switch {
+  border: none;
+  background: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: color 0.3s, background-color 0.3s;
+  border-radius: 25px;
+  color: #555;
+  position: relative;
+  z-index: 1;
+}
+
+.switch.active {
+  background-color: #007bff!important;  /* Blue background for active button */
+  color: white;  /* White text for active button */
+}
+
+.switch:hover:not(.active) {
+  background-color: #ddd;
+}
+
+.indicator {
+  position: absolute;
+  background-color: #007bff;  /* Blue background for indicator */
+  border-radius: 25px;
+  transition: width 0.3s, left 0.3s;
+  height: calc(100% - 10px);
+  top: 5px;
+  z-index: 0;
+}
+
+
+
+.menu {
+  position: absolute;
+  top: 120px;
+  right: -10px;
+  padding: 10px 20px;
+  background: #fff;
+  width: 200px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  transition: 0.5s;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 999; /* Ensure dropdown stays above other elements */
+}
+
+.menu.active {
+  top: 80px;
+  visibility: visible;
+  opacity: 1;
+}
+
+.menu::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  right: 28px;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  transform: rotate(45deg);
+}
+
+.menu h3 {
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  padding: 20px 0;
+  font-weight: 500;
+  color: #555;
+  line-height: 1.5em;
+}
+
+.menu h3 span {
+  font-size: 14px;
+  color: #cecece;
+  font-weight: 300;
+}
+
+.menu ul li {
+  list-style: none;
+  padding: 16px 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: center;
+}
+
+.menu ul li img {
+  max-width: 20px;
+  margin-right: 10px;
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
+.menu ul li:hover img {
+  opacity: 1;
+}
+
+.menu ul li a {
+  display: inline-block;
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+  transition: 0.5s;
+}
+
+.menu ul li:hover a {
+  color:blue;
+}
+
+
+ /*==============================================*/
+
+
+/* Toggle button */
+.toggle {
+  height: 1.875rem;
+  width: 1.875rem!important;
+  top: auto;
+  left: auto;
+  z-index: 4;
+  cursor: pointer;
+  border-radius: 2px;
+  background-color: var(--white);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  position: fixed;
+  display: none; /* Hide toggle button by default */
+}
+
+.toggle .common {
+  position: absolute;
+  height: 2px;
+  width: 20px!important;
+  background-color: black;
+  border-radius: 50px;
+  transition: 0.5s ease;
+}
+
+.toggle .top_line {
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.toggle .middle_line {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.toggle .bottom_line {
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%) !important;
+}
+
+/* Change toggle button appearance when checked */
+input[type="checkbox"]:checked + .toggle .top_line {
+  top: 14px !important;
+  left: 2px !important;
+  width: 25px !important;
+  transform: rotate(45deg) !important;
+}
+
+input[type="checkbox"]:checked + .toggle .bottom_line {
+  top: 14px !important;
+  left: 2px !important;
+  width: 25px !important;
+  transform: rotate(-45deg) !important;
+}
+
+input[type="checkbox"]:checked + .toggle .middle_line {
+  opacity: 0 !important;
+  transform: translateX(20px) !important;
+}
+
+/* Sidenav styles */
+#sidenav {
+  position: absolute;
+}
+
+.sidenav {
+  top: 0;
+  left: 0;
+  width: 22%;
+  height: 100vh!important;
+  background-color: var(--white);
+  box-shadow: #0000001f 0px 10px 50px;
+  transition: transform 0.3s ease-in-out;
+  z-index: 3;
+}
+
+.sidenav.closed {
+  transform: translateX(-100%);
+}
+
+.sidenav.open {
+  transform: translateX(0);
+}
+
+/* Main content styles */
+.main-content {
+  transition: margin-left 0.3s ease-in-out;
+  width: 100%;
+  z-index: 1;
+}
+
+.main-content.sidebar-open {
+  margin-left: 25%;
+}
+
+.main-content.sidebar-closed {
+  margin-left: 0;
+}
+
+/* Media Queries for Small Screens */
+@media (max-width: 768px) {
+  .toggle {
+    display: block; /* Show toggle button on small screens */
+  }
+
+  .sidenav {
+    width: 60%!important; /* Adjust the width as needed for small screens */
+  }
+
+  .main-content.sidebar-open {
+    margin-left: 0; /* Ensure main content doesn't move on small screens */
+  }
+
+  .main-content {
+    position: relative;
+    z-index: 1;
+  }
+}
+.modal-open {
+  overflow: hidden;
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  z-index: 1040;
+}

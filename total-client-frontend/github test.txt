@@ -1,0 +1,40 @@
+import React, { useContext, useState } from 'react';
+import CustomerContext from './contexts/CustomerContext';
+
+const CustomerSelect = () => {
+  const { customers } = useContext(CustomerContext);
+  const [selectedCustomerId, setSelectedCustomerId] = useState('');
+
+  const handleSelectChange = (event) => {
+    const customerId = event.target.value;
+    setSelectedCustomerId(customerId);
+    // You can now use selectedCustomerId for further processing
+    console.log("Selected Customer ID:", customerId);
+  };
+
+  return (
+    <div>
+      <select
+        className="form-sescscscscscslect"
+        value=sscscscscscsc
+        onChange={handleSelectChange}
+      >
+        <option value="" disabled>Select a customer</option>
+        {customers.map((customer) => (
+          <option key={customer.id} value={customer.id}>
+            {customer.name}
+          </option>
+        ))}
+      </select>
+      {/* Optionally display selected customer info */}
+      {selectedCustomerId && (
+        <div>
+          <p>Selected Customer ID: {selectedCustomerId}</p>
+          <p>Selected Customer Name: {customers.find(customer => customer.id === selectedCustomerId)?.name}</p>
+        </div>
+      )}
+    </div>
+  );
+};
+
+export default CustomerSelect;
